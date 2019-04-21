@@ -294,10 +294,17 @@ span[class ^= "icon"]{
 
 .sizer{
   margin: 5px;
+  width: 15px;
 }
 
 .image_menu {
   width: 15px;
+  display: none;
+}
+
+.image_menu2 {
+  width: 15px;
+  display: inline;
 }
 
 .right_block {
@@ -321,7 +328,15 @@ span[class ^= "icon"]{
   font-size: 20px;
   padding: 5px;
   color: #707275;
-  font-weight: bold;
+  font-weight: normal;
+}
+
+.active_image_choose {
+  display: inline;
+}
+
+.active_text_choose {
+  font-weight: bold !important;
 }
 
 //Task 3 styles
@@ -389,6 +404,124 @@ span[class ^= "icon"]{
 
 .non_decoration {
   text-decoration: none;
+}
+
+// Task 4 styles
+.task__main_block2 {
+  display: inline-block;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 400px;
+  background-color: #191717;
+  border-radius: 10px;
+  position: relative;
+  top: -5em;
+  box-shadow: 0 0 20px 5px #060606bd;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 15px;
+}
+
+.white_back_block {
+  background-color: white;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.header_text {
+  font-family: $font2 !important;
+  font-size: 16px;
+
+}
+
+.chosoe_instruction {
+
+}
+.choosed_row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.chossen_block {
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.choosed_text {
+  font-family: $font2 !important;
+  font-size: 16px;
+  color: white;
+  padding-right: 23%;
+}
+
+.search_pic {
+  display: inline;
+}
+
+.color {
+  background-color: white;
+  height: auto;
+  width: 1px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.pic_block {
+  height: 100%;
+  padding-right: 5px;
+}
+
+.place {
+  width: 12px;
+  height: 12px;
+  display: flex;
+}
+
+.grey_black_block {
+  background-color: grey;
+  width: 100%;
+  padding: 20px;
+}
+
+.inside_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.inside_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.black_block_inside {
+  background-color: black;
+  width: 100%;
+  min-height: 300px;
+  max-height: 300px;
+  overflow-y: scroll;
+  padding: 20px;
+}
+
+.element_row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.element_text {
+  color: white;
 }
 
 //WarLogo Style
