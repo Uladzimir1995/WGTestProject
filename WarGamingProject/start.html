@@ -1,3 +1,14 @@
+<!-- К данному тестовому проекты подключены различные бибилотеки,
+    скачивать их локально и подключать через пути я не нахожу целесообразным,
+    поэтому они подтягиваются из сети.
+    !!! ВАЖНО:
+              для корректого отображения всех стилей и кода в проекте,
+              необходимо подключение к Интернету!
+    ПРимечание:
+              возможна долга загрузка главной страницы, в связи с подключением
+              библиотек через сеть. После кэширования файлов, проблема отсутсвует.
+-->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -22,22 +33,22 @@
   <div class="nav_container">
     <ul class="nav">
       <li class="padding_change col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 active">
-        <a class="navigate_menu" href="#">
+        <a class="navigate_menu" href="#" id="task1">
           <span class="text">Task 1</span>
         </a>
       </li>
       <li class="padding_change col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-        <a class="navigate_menu" href="#">
+        <a class="navigate_menu" href="#" id="task2">
           <span class="text">Task 2</span>
         </a>
       </li>
       <li class="padding_change col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-        <a class="navigate_menu" href="#">
+        <a class="navigate_menu" href="#" id="task3">
           <span class="text">Task 3</span>
         </a>
       </li>
       <li class="padding_change col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-        <a class="navigate_menu" href="#">
+        <a class="navigate_menu" href="#" id="task4">
           <span class="text">Task 4</span>
         </a>
       </li>
@@ -49,7 +60,7 @@
   <div class="main_fat_block">
     <div class="main_fat_block_horizontal">
   <!-- Task 1 -->
-    <div class="task__main_block">
+    <div id="task1Content" class="task__main_block1">
       <span class="task__text_title">Task 1</span>
 
       <div class="central__grey_block">
@@ -78,7 +89,7 @@
 
 
   <!-- Task 2 -->
-  <div class="main_fat_block_horizontal">
+  <div id="task2Content" class="main_fat_block_horizontal">
       <div class="task__main_block">
         <span class="task__text_title">Task 2</span>
           <div class="central__grey_block2">
@@ -86,15 +97,15 @@
             <!-- 1300px -->
             <div class="width_block_max">
 
-              <a href="#" class="choose">
-                  <span class="texting">World Of Tanks</span>
+              <a class="choose">
+                  <span class="texting active_back_text">World Of Tanks</span>
               </a>
 
-              <a href="#" class="choose">
-                  <span class="texting active_back_text">World Of Warplanes</span>
+              <a class="choose">
+                  <span class="texting">World Of Warplanes</span>
               </a>
 
-              <a href="#" class="choose">
+              <a class="choose">
                   <span class="texting">World Of Warships</span>
               </a>
 
@@ -106,24 +117,24 @@
             <div class="width_block_min">
 
               <div>
-              <div class="left_block">
-                <a href="#" class="sizer"><img class="image_menu2" src="./images/menu.png" alt="menu"></a>
-                <span class="menu_text2">World Of Warplanes</span>
+              <div class="left_block" id="leftBlock">
+                <a class="sizer"><img class="image_menu2" src="./images/menu.png" alt="menu"></a>
+                <span id="textChoser" class="menu_text2">World Of Tanks</span>
               </div>
               </div>
 
-              <div class="right_block">
+              <div class="right_block" id="rightBlock">
 
                 <div class="menu_block">
-                  <a href="#" class="sizer"><img class="image_menu" src="./images/next.png" alt="next"></a>
-                  <span class="menu_text3">World Of Tanks</span>
+                  <a class="sizer"><img class="active_image_choose image_menu" src="./images/next.png" alt="next"></a>
+                  <span class="active_text_choose menu_text3">World Of Tanks</span>
                 </div>
                 <div class="menu_block">
-                  <a href="#" class="sizer"><img class="image_menu" src="./images/next.png" alt="next"></a>
+                  <a class="sizer"><img class="image_menu" src="./images/next.png" alt="next"></a>
                   <span class="menu_text3">World Of Warplanes</span>
                 </div>
                 <div class="menu_block">
-                  <a href="#" class="sizer"><img class="image_menu" src="./images/next.png" alt="next"></a>
+                  <a class="sizer"><img class="image_menu" src="./images/next.png" alt="next"></a>
                   <span class="menu_text3">World Of Warships</span>
                 </div>
               </div>
@@ -135,8 +146,8 @@
 
     <!-- Task 3 -->
 
-    <div class="main_fat_block_horizontal">
-        <div class="task__main_block">
+    <div  id="task3Content"  class="main_fat_block_horizontal">
+        <div class="task__main_block3">
           <span class="task__text_title">Task 3</span>
 
           <!-- содержание статьи -->
@@ -195,73 +206,76 @@
                 <span class="number_article">6.</span>
                 <span class="text_article">&nbsp «Повреждение союзников»</span>
               </div></a>
+
+
+
+
             </div>
           </div>
+
         </div>
     </div>
 
       <!-- Task 4 -->
-      <div class="main_fat_block_horizontal">
+      <div id="task4Content" class="main_fat_block_horizontal">
           <div class="task__main_block2">
-            <span class="task__text_title">Task 4</span>
+              <span class="task__text_title">Task 4</span>
 
 
-            <div class="white_back_block">
+              <div class="white_back_block">
 
-              <div class="header_text">Выбор элементов</div>
-              <div class="chosoe_instruction">На данный момент у вас выбрано &nbsp <span class="number"> 2 </span> &nbsp элемента</div>
-              <div class="choosed_row">
-                <div class="chossen_block">
-                  <span class="choosed_text">Элемент1</span>
-                  <div class="color"></div>
-                  <div class="pic_block"><img class="place search_pic" src="./images/close2.png" alt="X"></div>
-                </div>
+                  <div class="header_text">Выбор элементов</div>
+                  <div class="chosoe_instruction">На данный момент у вас выбрано &nbsp <span id="numberId" class="number"> 0 </span> &nbsp элемента</div>
+                  <div id="choosed_row_high" class="choosed_row">
+                     <!-- <div class="chossen_block">
+                          <span class="choosed_text">Элемент1</span>
+                          <div class="color"></div>
+                          <div class="pic_block"><img class="place search_pic" src="./images/close2.png" alt="X"></div>
+                      </div>-->
+                  </div>
+                  <button type="button" id="search_rud_btn" class="search_button_rus2">Изменить мой выбор</button>
+                  <div class="grey_black_block">
+                      <div class="inside_row">
+                          <span class="text_in_head">Диалог выбора элементов</span>
+                          <img id="close_pic_img" class="place search_pic" src="./images/close2.png" alt="X">
+                      </div>
+                      <div class="inside_row">
+                          <span class="text">Поиск</span>
+                          <input class="search_input"  type="text" name="search" id="search_input">
+                          <span class="text">Фильтр</span>
+                          <div class="custom-select" style="width:200px;">
+                              <select id="select">
+                                  <option value="0">Без фильтра</option>
+                                  <option value="10">Номер > 10</option>
+                                  <option value="100">Номер > 100</option>
+                                  <option value="200">Номер > 200</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="black_block_inside" id="black_block_inside">
+                          <!--<div class="element_row">
+                               <input type="checkbox" checked="checked">
+                               <div class="element_text">Элемент1</div>-->
+                          </div>
+
+                      <div class="chosoe_instruction">Выбранные элементы на анный момент</div>
+                      <div class="choosed_row" id="choosed_row_low">
+
+                      </div>
+                      <div class="row_down_bottum">
+                          <button id="saveButton" type="button" class="search_button_rus2">Сохранить</button>
+                          <button type="button" class="search_button_rus2">Отмена</button>
+                      </div>
+                    </div>
+                  </div>
               </div>
-              <button type="button" class="search_button_rus">Изменить мой выбор</button>
-              <div class="grey_black_block">
-                <div class="inside_row">
-                  <span class="text_in_head">Диалог выбора элементов</span>
-                  <img class="place search_pic" src="./images/close2.png" alt="X">
-                </div>
-                <div class="inside_row">
-                  <span class="text">Поиск</span>
-                  <input class="search_input"  type="text" name="search">
-                  <span class="text">Фильтр</span>
-                  <div class="custom-select" style="width:200px;">
-                    <select>
-                      <option value="0">Без фильтра</option>
-                      <option value="1">Номер > 10</option>
-                      <option value="2">Номер > 100</option>
-                      <option value="3">Номер > 200</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="black_block_inside">
-                  <div class="element_row">
-                    <input type="checkbox" checked="checked">
-                    <div class="element_text">Элемент1</div>
-                  </div>
-                </div>
-                <div class="chosoe_instruction">Выбранные жлементы на анный момент</div>
-                <div class="choosed_row">
-                  <div class="chossen_block">
-                    <span class="choosed_text">Элемент1</span>
-                    <div class="color"></div>
-                    <div class="pic_block"><img class="place search_pic" src="./images/close2.png" alt="X"></div>
-                  </div>
-                </div>
-                <div class="row_down_bottum">
-                  <button type="button" class="search_button_rus">Сохранить</button>
-                  <button type="button" class="search_button_rus">Отмена</button>
-                </div>
-
-              </div>
-            </div>
           </div>
       </div>
 
 
-<!-- -->
+      <!-- -->
+
+
 
 
 
